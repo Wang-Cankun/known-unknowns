@@ -1,32 +1,38 @@
 # rumsfeld-matrix
 
-A Claude skill that maps the epistemic terrain of a question before answering it, using the Rumsfeld Matrix:
+An agent skill that turns "I want to talk this through with an AI" into a guided discussion, using the Rumsfeld Matrix as the map:
 
-|                   | you know it                        | you don't know it              |
-| ----------------- | ---------------------------------- | ------------------------------ |
-| **aware of it**   | known knowns — verified facts      | known unknowns — named gaps    |
-| **unaware of it** | unknown knowns — tacit assumptions | unknown unknowns — blind spots |
+|                   | you know it                        | you don't know it                            |
+| ----------------- | ---------------------------------- | -------------------------------------------- |
+| **aware of it**   | known knowns — stated and confirmed | known unknowns — named gaps                  |
+| **unaware of it** | unknown knowns — felt but unworded | unknown unknowns — options you'd never ask about |
 
-Instead of answering with uniform confidence, the agent runs a six-step "pump" that moves items from the dark quadrants toward the light ones:
+## Why
 
-1. **Frame** the claim in one falsifiable sentence.
-2. **Known knowns** — every load-bearing fact tagged `verified:<source>` or `assumed`.
-3. **Known unknowns** — every gap assigned a move: `lookup`, `ask`, or `flag`.
-4. **Unknown knowns** — tacit assumptions surfaced, including what *you* know but haven't told it.
-5. **Unknown unknowns** — hunted with probes: premortem, expert lens, inversion, base rate.
-6. **Pump, then answer** — lookups executed, asks batched, and the answer ends with a calibration note: **Solid / Open / Dark**.
+Two failure modes wreck cross-domain conversations with an AI:
 
-## When it fires
+1. **You have the feeling but not the words.** An engineer discussing UI animation knows exactly which motion they like — and cannot describe it. Asking them "what effect do you want?" is useless: they can't *recall* the term. But they can *recognize* it instantly when shown "staggered entrance? spring easing?".
+2. **You don't know the option exists.** You never ask about what you've never heard of, so your requests stay conservative forever.
 
-The skill is model-invoked: Claude reaches for it on its own when a question, decision, or plan carries real uncertainty — or when you ask "what am I missing", about blind spots, risks, or its confidence. You can also invoke it by name.
+This skill gives the agent one move for each: **lend words** (named candidates + concrete examples, answered by pointing) and **give a tour** ("you didn't ask, but X is possible").
+
+## How a session runs
+
+1. **Draft-first opening** — the agent sketches an initial map from your topic and its own domain knowledge, and asks you to correct it. Correcting a wrong map is faster than filling a blank one.
+2. **One cell per turn** — each turn redraws the full compact map (`✓` confirmed · `?` gap · `!` assumption · `~` dark), then asks exactly one question, always with named candidates. Open-ended blanks are off the menu.
+3. **Closing brief** — when the dark cells are dug out (or you call it), you get a distilled brief: the vocabulary you recognized and the choices you settled, phrased to paste verbatim into a future prompt to any agent.
+
+Typical uses: articulating taste for generation tasks, discovering what a tool or AI can actually do, surveying an unfamiliar ecosystem before choosing, and weighing open decisions whose real trade-offs you haven't put into words.
 
 ## Install
 
-Clone (or symlink) into your Claude Code skills directory:
+Clone (or symlink) into your agent's skills directory — for Claude Code:
 
 ```sh
 git clone https://github.com/Wang-Cankun/rumsfeld-matrix.git ~/.claude/skills/rumsfeld-matrix
 ```
+
+The skill is model-invoked: it fires when you signal discussion intent ("let's discuss…", "help me think through…"), or you can invoke it by name.
 
 ## License
 

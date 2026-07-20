@@ -1,44 +1,36 @@
 ---
 name: rumsfeld-matrix
-description: Map what is known and unknown before answering. Use when a question, decision, or plan carries real uncertainty, when the user asks "what am I missing", about blind spots or risks, or how confident you are — or before committing to a high-stakes recommendation.
+description: Guide a discussion by mapping the topic into known/unknown quadrants and lighting it up turn by turn. Use when the user wants to think a topic through together — "discuss", "think through", "help me think about", "聊聊 / 帮我想想" — especially to articulate a preference they can't put into words, discover options they wouldn't know to ask about, survey an unfamiliar domain, or weigh an open decision.
 ---
 
 # Rumsfeld Matrix
 
-Chart the epistemic terrain into four quadrants, then run the pump: each step converts darker quadrants into lighter ones, until whatever stays dark is at least labeled in the answer.
+You are the guide of a multi-turn discussion; the matrix is its map. The topic starts mostly dark, and each turn lights one cell. Hold the discussion in the user's language.
 
-|                        | you know it                       | you don't know it              |
-| ---------------------- | --------------------------------- | ------------------------------ |
-| **aware of it**        | known knowns — verified facts     | known unknowns — named gaps    |
-| **unaware of it**      | unknown knowns — tacit assumptions | unknown unknowns — blind spots |
+|                   | they know it                        | they don't know it                          |
+| ----------------- | ----------------------------------- | ------------------------------------------- |
+| **aware of it**   | known knowns — stated and confirmed | known unknowns — named gaps                 |
+| **unaware of it** | unknown knowns — felt but unworded  | unknown unknowns — options they'd never ask about |
 
-## Steps
+The two dark cells call for opposite aid:
 
-1. **Frame.** State in one sentence the claim, decision, or plan under evaluation. Done when a reader could disagree with the sentence — a frame too vague to disagree with is not a frame.
+- **Unknown knowns → lend words.** The user holds the answer but not the vocabulary — "I know I like this pattern, I just can't describe it." They cannot produce the term, but they can recognize it: offer named candidates with a concrete example each and let them point. Recognition over recall.
+- **Unknown unknowns → give a tour.** The user cannot ask about what they don't know exists. Walk them through the region of option space they never mentioned: "you didn't ask, but X is possible / is the standard way / just became easy."
 
-2. **Known knowns.** List the facts the answer will load-bear on. Tag each `verified:<source>` (checked in this conversation — file, doc, search, test run) or `assumed`. Done when every fact carries a tag, and every `assumed` item has moved to step 3 as a gap — tagging it is what promotes it from tacit to named.
+## Opening
 
-3. **Known unknowns.** List the named gaps. Assign each exactly one move: `lookup` (search, read, or run something), `ask` (only the user can answer), or `flag` (accept it, but it must appear in the final calibration note). Done when no gap is move-less.
+Draft the map yourself from the topic sentence plus your own domain knowledge, with guesses tagged as guesses, and ask the user to correct it. A wrong map draws corrections faster than a blank interview draws answers — and your domain knowledge is the main asset you bring, so spend it in the first turn, not the last. Then start digging at the darkest cell.
 
-4. **Unknown knowns.** Hunt the premises being treated as true without ever being stated. Two hunts:
-   - For each known known, ask "what breaks if this is false?" — anything that breaks silently was resting on an unstated premise; state it and tag it like step 2.
-   - What does the user know that they haven't said — constraints, prior attempts, context, taste? Each becomes an `ask` move in step 3.
+## Each turn
 
-   Done when every load-bearing premise exists on the page rather than only in the reasoning.
+1. **Redraw the full map**, compact enough to stay a card, not a wall: fixed skeleton, one phrase per entry, status marks — `✓` confirmed · `?` named gap · `!` assumption to check · `~` dark region. Whatever the user just recognized or corrected is promoted on this turn's map.
+2. **Dig exactly one cell**: a single question carrying 2–4 named candidates, each with a concrete example, so the user answers by pointing, correcting, or rejecting the lot. Match the probe to the scenario:
+   - *Taste articulation* — style vocabulary with miniature examples ("staggered entrance, like list items landing one by one?").
+   - *Capability discovery / unfamiliar ecosystem* — a tour of standard practice and adjacent options they didn't mention.
+   - *Open decision* — premortem ("it failed; likeliest cause?"), inversion, what-would-a-specialist-check-first.
 
-5. **Unknown unknowns.** These cannot be listed, only hunted. Run at least two probes:
-   - **Premortem** — assume the answer turned out wrong or the plan failed; write the most likely cause.
-   - **Expert lens** — what would a domain specialist check first that hasn't come up yet?
-   - **Inversion** — argue the opposite conclusion for one paragraph; note what evidence it would need.
-   - **Base rate** — how often do things of this class fail, regardless of this instance's details?
+The turn is done when the map reflects the last answer and exactly one new question is on the table.
 
-   Anything a probe surfaces is promoted to step 3 as a fresh known unknown and gets a move. Done when at least two probes ran and every surfaced item is promoted.
+## Closing
 
-6. **Pump, then answer.** Execute every `lookup` move now; batch the `ask` moves into questions for the user. Then give the answer, ending with a three-line calibration note:
-   - **Solid** — the verified knowns the answer rests on.
-   - **Open** — the flagged unknowns and pending asks.
-   - **Dark** — what the probes could not light up, named as a region ("long-term interactions untested"), not hand-waved.
-
-## Output shape
-
-Show the work compactly: a short quadrant rundown (a few bullets per quadrant, tags visible) before the answer, the calibration note after it. The matrix is the receipt, not the deliverable — the deliverable is an answer whose confidence is earned.
+When no cell looks worth another dig — or the user calls it — propose closing, and deliver the **brief**: the vocabulary they recognized, the choices they settled, and the residual dark named as regions, all phrased so the user can paste it verbatim into a future prompt to any agent. The map is the receipt; the brief is the asset they leave with.
