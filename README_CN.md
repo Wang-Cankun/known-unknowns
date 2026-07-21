@@ -1,4 +1,4 @@
-# known-unknowns [![skills.sh](https://skills.sh/b/wang-cankun/known-unknowns)](https://skills.sh/wang-cankun/known-unknowns)
+# known-unknowns [![skills.sh](https://skills.sh/b/wang-cankun/known-unknowns)](https://skills.sh/wang-cankun/known-unknowns/known-unknowns)
 
 [English](./README.md) | 简体中文
 
