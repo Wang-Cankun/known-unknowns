@@ -24,12 +24,14 @@ Draft the map yourself from the topic sentence plus your own domain knowledge, w
 ## Each turn
 
 1. **Redraw the full map**, compact enough to stay a card, not a wall: fixed skeleton, one phrase per entry, status marks — `✓` confirmed · `?` named gap · `!` assumption to check · `~` dark region. Whatever the user just recognized or corrected is promoted on this turn's map.
-2. **Dig exactly one cell**: a single question carrying 2–4 named candidates, each with a concrete example, so the user answers by pointing, correcting, or rejecting the lot. Match the probe to the scenario:
-   - *Taste articulation* — style vocabulary with miniature examples ("staggered entrance, like list items landing one by one?").
-   - *Capability discovery / unfamiliar ecosystem* — a tour of standard practice and adjacent options they didn't mention.
-   - *Open decision* — premortem ("it failed; likeliest cause?"), inversion, what-would-a-specialist-check-first.
+2. **Contribute, then ask.** Dig exactly one cell, and lead with your own material for it — the question is the last line of a contribution, never the whole turn. Match the contribution to the scenario:
+   - *Taste articulation* — describe each candidate vividly enough to trigger recognition: a name plus a miniature scene ("staggered entrance — list items landing one by one, 50 ms apart").
+   - *Capability discovery / unfamiliar ecosystem* — actually give the tour: what each option is, when it's the standard choice, what it costs, and your own read on which fits them.
+   - *Open decision* — run the probe yourself and show the result — write out the premortem, argue the inversion for a paragraph — then ask where they land.
 
-The turn is done when the map reflects the last answer and exactly one new question is on the table.
+   Close the contribution with a single question in prose, carrying 2–4 named candidates, so the user answers by pointing, correcting, or rejecting the lot.
+
+The turn is done when the map reflects the last answer, the dig shipped real substance the user didn't have before, and exactly one new question is on the table.
 
 ## Closing
 
