@@ -1,38 +1,46 @@
 ---
 name: known-unknowns
-description: Guide a discussion by mapping the topic into known/unknown quadrants and lighting it up turn by turn. Use when the user wants to think a topic through together — "discuss", "think through", "help me think about", "聊聊 / 帮我想想" — especially to articulate a preference they can't put into words, discover options they wouldn't know to ask about, survey an unfamiliar domain, or weigh an open decision.
+description: Orient “help me think this through” discussions with a Rumsfeld matrix, making tacit knowledge sayable, unseen possibilities visible, and uncertain judgments testable.
 ---
 
-# Rumsfeld Matrix
+# Orientation through the Rumsfeld Matrix
 
-You are the guide of a multi-turn discussion; the matrix is its map. The topic starts mostly dark, and each turn lights one cell. Hold the discussion in the user's language.
+Conduct the discussion in the user's chosen language.
+
+Use the matrix to orient a multi-turn discussion. The topic starts mostly dark; each turn enables one **aspect-seeing** by making one relevant part more nameable, visible, or testable.
 
 |                   | they know it                        | they don't know it                          |
 | ----------------- | ----------------------------------- | ------------------------------------------- |
 | **aware of it**   | known knowns — stated and confirmed | known unknowns — named gaps                 |
 | **unaware of it** | unknown knowns — felt but unworded  | unknown unknowns — options they'd never ask about |
 
-The two dark cells call for opposite aid:
+Use the marks as lifecycle shorthand: `✓` settled · `?` named question · `!` recognition candidate · `~` unexplored frontier.
 
-- **Unknown knowns → lend words.** The user holds the answer but not the vocabulary — "I know I like this pattern, I just can't describe it." They cannot produce the term, but they can recognize it: offer named candidates with a concrete example each and let them point. Recognition over recall.
-- **Unknown unknowns → give a tour.** The user cannot ask about what they don't know exists. Walk them through the region of option space they never mentioned: "you didn't ask, but X is possible / is the standard way / just became easy."
+Choose the move by cell:
+
+- **Known knowns → confirm and compress.** Restate what is settled, preserve only what matters downstream, and reopen it only when later evidence conflicts.
+- **Known unknowns → investigate.** Name the missing answer and what evidence, reasoning, or experiment would resolve it. Run the available probe before asking the user.
+- **Unknown knowns → lend words.** Offer 2–4 named candidates with a concrete example each so the user can recognize, reject, or refine them. Recognition beats recall.
+- **Unknown unknowns → give a tour.** Introduce an unmentioned region of the option space: what exists, when it fits, what it costs, and your own read.
+
+Keep the move open-ended. Taste articulation, capability discovery, and open decisions are examples, not branches: lend vivid vocabulary, tour an option space and its tradeoffs, or run a concrete probe such as a premortem or inversion. Other topics may call for exposing an assumption, drawing a distinction, offering a counterexample, changing scale, or another move suited to the topic.
 
 ## Opening
 
-Draft the map yourself from the topic sentence plus your own domain knowledge, with guesses tagged as guesses, and ask the user to correct it. A wrong map draws corrections faster than a blank interview draws answers — and your domain knowledge is the main asset you bring, so spend it in the first turn, not the last. Then start digging at the darkest cell.
+Draft the full map from the topic and your domain knowledge, tagging every inference as `!`. A wrong map draws corrections faster than a blank interview draws answers. Choose the darkest useful entry, contribute an aspect-seeing, then end with one question that both advances that entry and invites correction of the map.
+
+The opening is done when the full map is visible, every inference is marked, one cell received substantive contribution, and exactly one question is on the table.
 
 ## Each turn
 
-1. **Redraw the full map**, compact enough to stay a card, not a wall: fixed skeleton, one phrase per entry, status marks — `✓` confirmed · `?` named gap · `!` assumption to check · `~` dark region. Whatever the user just recognized or corrected is promoted on this turn's map.
-2. **Contribute, then ask.** Dig exactly one cell, and lead with your own material for it — the question is the last line of a contribution, never the whole turn. Match the contribution to the scenario:
-   - *Taste articulation* — describe each candidate vividly enough to trigger recognition: a name plus a miniature scene ("staggered entrance — list items landing one by one, 50 ms apart").
-   - *Capability discovery / unfamiliar ecosystem* — actually give the tour: what each option is, when it's the standard choice, what it costs, and your own read on which fits them.
-   - *Open decision* — run the probe yourself and show the result — write out the premortem, argue the inversion for a paragraph — then ask where they land.
+1. **Redraw the full map**, compact enough to stay a card: keep a fixed skeleton and one phrase per entry. Promote whatever the user just recognized, answered, or corrected.
+2. **Enable one aspect-seeing.** Choose one cell and contribute before asking. Make one relevant aspect more nameable, visible, or testable using the move suited to the topic.
+3. **Ask exactly one question.** When seeking recognition, carry 2–4 named candidates; otherwise ask the single question that most advances the selected cell.
 
-   Close the contribution with a single question in prose, carrying 2–4 named candidates, so the user answers by pointing, correcting, or rejecting the lot.
-
-The turn is done when the map reflects the last answer, the dig shipped real substance the user didn't have before, and exactly one new question is on the table.
+The turn is done when the map reflects the last answer, the contribution changed what can be named, seen, or tested, and exactly one new question is on the table.
 
 ## Closing
 
-When no cell looks worth another dig — or the user calls it — propose closing, and deliver the **brief**: the vocabulary they recognized, the choices they settled, and the residual dark named as regions, all phrased so the user can paste it verbatim into a future prompt to any agent. The map is the receipt; the brief is the asset they leave with.
+When the user calls it, close without another dig. Otherwise close only when no active mapped entry warrants another turn. Audit the map first: each `?` is answered or deferred; each `!` is recognized, rejected, or deferred; and each `~` is explored into something more concrete or retained as residual darkness.
+
+Before an agent-proposed close, run one **frame-break**: test one plausible missing aspect that could change the conclusion. Continue if it matters. Otherwise deliver the **brief**: the vocabulary the user recognized, the choices they settled, the gaps they deferred, and the residual darkness, phrased so they can paste it verbatim into a future prompt. The map is the receipt; the brief is the asset they leave with.
