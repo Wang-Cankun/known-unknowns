@@ -1,0 +1,4 @@
+interface:
+  display_name: "Known Unknowns"
+  short_description: "Map uncertainty and surface tacit or unseen knowledge"
+  default_prompt: "Use $known-unknowns to help me think this through, name what I cannot yet articulate, and test what remains uncertain."
