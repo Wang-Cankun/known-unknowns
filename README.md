@@ -1,4 +1,4 @@
-# rumsfeld-matrix
+# known-unknowns
 
 An agent skill that turns "I want to talk this through with an AI" into a guided discussion, using the Rumsfeld Matrix as the map:
 
@@ -29,7 +29,7 @@ Typical uses: articulating taste for generation tasks, discovering what a tool o
 Clone (or symlink) into your agent's skills directory — for Claude Code:
 
 ```sh
-git clone https://github.com/Wang-Cankun/rumsfeld-matrix.git ~/.claude/skills/rumsfeld-matrix
+git clone https://github.com/Wang-Cankun/known-unknowns.git ~/.claude/skills/known-unknowns
 ```
 
 The skill is model-invoked: it fires when you signal discussion intent ("let's discuss…", "help me think through…"), or you can invoke it by name.

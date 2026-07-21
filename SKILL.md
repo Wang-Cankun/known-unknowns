@@ -1,5 +1,5 @@
 ---
-name: rumsfeld-matrix
+name: known-unknowns
 description: Guide a discussion by mapping the topic into known/unknown quadrants and lighting it up turn by turn. Use when the user wants to think a topic through together — "discuss", "think through", "help me think about", "聊聊 / 帮我想想" — especially to articulate a preference they can't put into words, discover options they wouldn't know to ask about, survey an unfamiliar domain, or weigh an open decision.
 ---
 
