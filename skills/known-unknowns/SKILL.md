@@ -1,5 +1,10 @@
 ---
 name: known-unknowns
+metadata:
+  summary: >-
+    Guided discussions on the Rumsfeld matrix: lends you words for preferences
+    you can't articulate, tours options you don't know exist, and ends with a
+    paste-ready brief.
 description: Orient “help me think this through” discussions with a Rumsfeld matrix, making tacit knowledge sayable, unseen possibilities visible, and uncertain judgments testable.
 ---
 
