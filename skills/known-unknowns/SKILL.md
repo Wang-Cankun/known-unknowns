@@ -2,10 +2,10 @@
 name: known-unknowns
 metadata:
   summary: >-
-    Guided discussions on the Rumsfeld matrix: lends you words for preferences
-    you can't articulate, tours options you don't know exist, and ends with a
-    paste-ready brief.
-description: Orient “help me think this through” discussions with a Rumsfeld matrix, making tacit knowledge sayable, unseen possibilities visible, and uncertain judgments testable.
+    Guided discussions on the Rumsfeld matrix: helps articulate tacit
+    judgments, surfaces unrecognized patterns, tours unseen options, and ends
+    with a paste-ready brief.
+description: Orient “help me think this through” discussions with a Rumsfeld matrix. Use when the user wants to articulate a tacit judgment, surface an unrecognized assumption or pattern, investigate a named uncertainty, or tour unfamiliar options.
 ---
 
 # Orientation through the Rumsfeld Matrix
@@ -17,18 +17,20 @@ Use the matrix to orient a multi-turn discussion. The topic starts mostly dark; 
 |                   | they know it                        | they don't know it                          |
 | ----------------- | ----------------------------------- | ------------------------------------------- |
 | **aware of it**   | known knowns — stated and confirmed | known unknowns — named gaps                 |
-| **unaware of it** | unknown knowns — felt but unworded  | unknown unknowns — options they'd never ask about |
+| **unaware of it** | unknown knowns — operative but unrecognized | unknown unknowns — options they'd never ask about |
+
+The matrix tracks awareness; tacitness tracks articulability. Classify each entry by awareness, and treat difficulty articulating an already-recognized judgment as a separate named gap. Split descriptions whose parts belong in different cells.
 
 Use the marks as lifecycle shorthand: `✓` settled · `?` named question · `!` recognition candidate · `~` unexplored frontier.
 
 Choose the move by cell:
 
 - **Known knowns → confirm and compress.** Restate what is settled, preserve only what matters downstream, and reopen it only when later evidence conflicts.
-- **Known unknowns → investigate.** Name the missing answer and what evidence, reasoning, or experiment would resolve it. Run the available probe before asking the user.
-- **Unknown knowns → lend words.** Offer 2–4 named candidates with a concrete example each so the user can recognize, reject, or refine them. Recognition beats recall.
+- **Known unknowns → investigate.** Name the gap and what would resolve it. When the gap is articulation, **externalize**: propose `!` candidate representations that another person or model could act on, then test them against the user's already-recognized judgment. Otherwise use evidence, reasoning, or experiment. Run the available probe before asking the user.
+- **Unknown knowns → surface for recognition.** Reflect patterns, assumptions, commitments, or practiced judgment already present in the user's words, behavior, or artifacts. Present 2–4 grounded hypotheses as `!` candidates so the user can recognize, reject, or refine them. Recognition beats recall.
 - **Unknown unknowns → give a tour.** Introduce an unmentioned region of the option space: what exists, when it fits, what it costs, and your own read.
 
-Keep the move open-ended. Taste articulation, capability discovery, and open decisions are examples, not branches: lend vivid vocabulary, tour an option space and its tradeoffs, or run a concrete probe such as a premortem or inversion. Other topics may call for exposing an assumption, drawing a distinction, offering a counterexample, changing scale, or another move suited to the topic.
+Keep the move open-ended. Taste articulation, capability discovery, and open decisions are examples, not branches: externalize an articulation gap, surface a pattern for recognition, tour an option space and its tradeoffs, or run a concrete probe such as a premortem or inversion. Other topics may call for drawing a distinction, offering a counterexample, changing scale, or another move suited to the topic.
 
 ## Opening
 
