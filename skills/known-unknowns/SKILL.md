@@ -5,14 +5,14 @@ metadata:
     Guided discussions on the Rumsfeld matrix: helps articulate tacit
     judgments, surfaces unrecognized patterns, tours unseen options, and ends
     with a paste-ready brief.
-description: Orient “help me think this through” discussions with a Rumsfeld matrix. Use when the user wants to articulate a tacit judgment, surface an unrecognized assumption or pattern, investigate a named uncertainty, or tour unfamiliar options.
+description: Orient a multi-turn “help me think this through” deliberation with a Rumsfeld matrix. Use when the user owns an open decision or judgment and wants a thinking partner — articulating a tacit judgment, surfacing an unrecognized assumption or pattern, or touring options around the choice they are weighing. A question seeking a direct answer (factual lookup, how-to, debugging) gets the answer, not this skill.
 ---
 
 # Orientation through the Rumsfeld Matrix
 
-Conduct the discussion in the user's chosen language.
+Conduct the deliberation in the user's language.
 
-Use the matrix to orient a multi-turn discussion. The topic starts mostly dark; each turn enables one **aspect-seeing** by making one relevant part more nameable, visible, or testable.
+Use the matrix to orient a multi-turn deliberation. The topic starts mostly dark; each turn enables one **aspect-seeing** by making one relevant part more nameable, visible, or testable.
 
 |                   | they know it                        | they don't know it                          |
 | ----------------- | ----------------------------------- | ------------------------------------------- |
